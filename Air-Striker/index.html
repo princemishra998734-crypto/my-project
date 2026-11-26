@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Striker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+    <header>
+        <h1>✈ AIR STRIKER</h1>
+        <div class="stats">
+            <span> SCORE: <b id="score">0</b></span>
+            <span> LIVES: <b id="lives">3</b></span>
+        </div>
+    </header>
+
+    <div class="game-area">
+        <canvas id="gameCanvas"></canvas>
+
+        <div class="overlay" id="overlay">
+            <h2 id="message">AIR STRIKER</h2>
+            <p id="description">Defend the sky. Destroy all enemies!</p>
+            <button id="startBtn">START GAME</button>
+        </div>
+
+<div class="audio-panel">
+    <h3>🎵 SOUND SETTINGS</h3>
+
+    <button id="musicBtn">🔊 MUSIC ON</button>
+    <button id="soundBtn">💥 SOUND ON</button>
+
+    <label for="volume">MASTER VOLUME</label>
+    <input
+        type="range"
+        id="volume"
+        min="0"
+        max="100"
+        value="40"
+    >
+</div>
+
+    </div>
+
+    <div class="controls">
+        <div>
+            <button id="left">◀</button>
+            <button id="right">▶</button>
+        </div>
+        <button id="shoot">🔥 FIRE</button>
+    </div>
+
+    <p class="help">Keyboard: ← → or A / D to move | SPACE to shoot</p>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>

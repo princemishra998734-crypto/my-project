@@ -1,0 +1,157 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #050b19;
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    width: 95%;
+    max-width: 650px;
+    text-align: center;
+}
+
+header {
+    padding: 15px;
+    background: #101e38;
+    border: 1px solid #1e6caa;
+    border-radius: 12px 12px 0 0;
+}
+
+h1 {
+    color: #42d9ff;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    font-size: 17px;
+}
+
+.stats b {
+    color: #ffe45e;
+}
+
+.game-area {
+    position: relative;
+    width: 100%;
+    background: #06152c;
+    overflow: hidden;
+    border: 2px solid #1e6caa;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(3, 10, 27, 0.88);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+.overlay h2 {
+    color: #40ddff;
+    font-size: 34px;
+    text-shadow: 0 0 15px #008cff;
+}
+
+.overlay p {
+    color: #ddd;
+}
+
+button {
+    background: #087cff;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 9px;
+    cursor: pointer;
+    touch-action: none;
+}
+
+button:hover {
+    background: #00bfff;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5px;
+}
+
+.controls button {
+    min-width: 65px;
+    margin: 3px;
+}
+
+#shoot {
+    background: #e53c32;
+}
+
+.help {
+    color: #9eafc7;
+    font-size: 13px;
+}
+
+.audio-panel {
+    background: #101e38;
+    border: 1px solid #1e6caa;
+    border-radius: 12px;
+    padding: 18px;
+    margin: 12px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.audio-panel h3 {
+    width: 100%;
+    color: #42d9ff;
+}
+
+.audio-panel button {
+    font-size: 14px;
+    padding: 11px 18px;
+}
+
+.audio-panel label {
+    color: white;
+    font-size: 13px;
+}
+
+#volume {
+    width: 130px;
+    accent-color: #00cfff;
+}
+
+
+@media (min-width: 700px) {
+    .controls {
+        display: none;
+    }
+}
